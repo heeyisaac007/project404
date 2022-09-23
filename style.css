@@ -1,67 +1,126 @@
-.body{
-  /* margin: 0;
-  background: #FFFFFF; */
-  width: 960px;
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace; 
+*/
+
+/* content 
+
+1- * = all elements
+2- body
+3- main (main one div)
+4- h2
+5- container (img and text)
+6- scarecrow (img div)
+7- text-container
+8- h1 (bad news)
+9- para (2nd para)
+10- button
+    ~ button link
+11- footer
+    ~ footer link
+    ~ a 
+
+*/
+
+* {
+  margin: 0;
 }
 
-.header-1 {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  
-}
-
-.header {
-  font-family: 'Inconsolata';
-  font-size: 24px;
-  font-weight: 700;
-  
+body {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .main {
+ width: auto;
+ height: auto;
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px 0px 20px 0px;
 
 }
 
-main_flex-container {
+.container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
-.main_image {
-
+.scarecrow {
+  display: flex;
+  align-content: flex-start;
+  Width: 539px;
+  Height: 447px;
+  margin-right: 50px;
 }
 
-main_flex-container2 {
-
+.text-container {
+  font-family: 'Space Mono', monospace; 
 }
 
-.main_header {
-
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700; 
+  font-size: 64px;
+  margin-bottom: 40px;
+  width: 80%;
 }
 
-.main_paragrah {
-
+.para {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 40px;
+  width: 50%;
 }
 
-.main_button {
-
+button {
+  background-color: rgba(0, 0, 0, 0.761);
+  justify-content: center;
+  font-family: 'Space Mono', monospace; 
+  /* border: 0; */
+  padding: 20px 25px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .button-link {
-
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.footer{
-  margin: 0;
+footer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 1rem;
-  color: #BDBDBD;
-  z-index: 0;
-}
-.heeyisaac007{
-  color: #BDBDBD;
-  cursor: pointer;
+  margin-bottom: 40px;
+  color: #bdbdbd;
 }
 
+.footer-link {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+a {
+  text-decoration: none;
+  color: #bdbdbd;
+  cursor: pointer;
+}
