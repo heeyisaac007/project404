@@ -37,7 +37,7 @@ body {
 }
 
 .main {
- width: auto;
+ width: 90%;
  height: auto;
 }
 
@@ -125,32 +125,7 @@ a {
   cursor: pointer;
 }
 
-@media(max-width:1050px){
-  header h2 {
-      padding-bottom: 0px;
-  }
-  .container {
-      flex: 1;
-      flex-wrap: wrap;
-  }
-  .scarecrow {
-      padding: 60px;
-  }
-  footer {
-      position: static;
-  }
+@media screen {
   
 }
 
-@media(max-width:425px){
-  .container {
-      padding: 20px 20px 100px 20px;
-  }
-  .text-container  h1 {
-      font-size: 48px;
-      padding-bottom: 30px;
-  }
-   p {
-      font-size: 18px;
-  }
-}
